@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/vtxtnum1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/vtxtnum2"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <Spinner
+        android:id="@+id/spOperacion"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:entries="@array/despliega"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/lblresultado"
+        android:layout_width="228dp"
+        android:layout_height="34dp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcula"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="277dp" />
+</android.support.constraint.ConstraintLayout>
